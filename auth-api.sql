@@ -164,7 +164,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Membuang data untuk tabel auth_api.users: ~3 rows (lebih kurang)
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-	(1, 'Test Auth', 'fajar@bareksa.com', '12345678', NULL, NULL, NULL),
+	(1, 'Fajar', 'fajar@bareksa', '$2y$10$iDVRHVOybbDDGAF8Hi6IzOA77TNUgIz.qj4iQNMCTlqGLxhBSZM.6', NULL, NULL, '2018-06-12 14:31:47'),
 	(2, 'fajar', 'fajarrhid@gmail.com', '$2y$10$iO/QDEoOMRl2feePxTaysuoThzW7y0OErnxPZF3JsNtiYG8fvuvPe', NULL, '2018-06-12 04:25:20', '2018-06-12 04:25:20'),
 	(3, 'sdsddsd', 'test15@gmail.com', '$2y$10$6gdLKKCxa6jLCZe60K33euGwx2iufbnhwg8WRgb9WI9zvDEozQlqy', NULL, '2018-06-12 06:09:47', '2018-06-12 14:20:21');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;

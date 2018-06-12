@@ -9,7 +9,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\Repositories\Contracts\UserRepository as Contracts;
 use App\Models\Users;
-use DB;
 
 class UserRepository implements Contracts{
 	

@@ -95,6 +95,12 @@ class UsersController extends Controller {
 		}
 	}
 
+	/**
+	 * [getUserDelete description]
+	 * @param  Request $request [description]
+	 * @param  [type]  $id      [description]
+	 * @return [type]           [description]
+	 */
 	public function getUserDelete(Request $request,$id) 
 	{
 		
