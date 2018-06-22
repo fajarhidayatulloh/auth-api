@@ -8,6 +8,7 @@ Auth API.
 - You may delete `.git` folder if you get this code via `git clone`
 - Run `composer update` or `composer install`
 - Copy `.env.example` to `.env` for Configure your `.env` file.
+- Chmod 777 `Storage`
 - Well Done. 
 
 ## A Live PoC
@@ -18,7 +19,7 @@ Auth API.
 php artisan serve
 ```
 
-To authenticate a user, make a `POST` request to `{{url}}/oauth/token` with parameter as mentioned below:
+To authenticate a user, make a `POST` request to `{{url}}/api/v1/oauth/token` with parameter as mentioned below:
 
 ```
 grant_type: password

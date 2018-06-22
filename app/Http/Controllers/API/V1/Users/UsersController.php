@@ -3,7 +3,7 @@
 /**
  * author : Fajar Hidayatulloh
  */
-namespace App\Http\Controllers\API\Users;
+namespace App\Http\Controllers\API\V1\Users;
 
 use App\Http\Controllers\Controller;
 use App\Repositories\UserRepository;

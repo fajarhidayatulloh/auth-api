@@ -14,10 +14,13 @@ use Illuminate\Http\Request;
 */
 
 //Register
-Route::post('/users/registration','API\Users\UsersController@getRegistration');
+Route::group(['prefix' => config('api.api_version')], function() {
+    Route::post('/users/registration','API\V1\Users\UsersController@getRegistration');
+});
 //User
-Route::middleware('auth:api')->group( function () {     
-    Route::get('/users/list', 'API\Users\UsersController@getUserList');
-    Route::post('/users/update/{id}', 'API\Users\UsersController@getUserUpdate');
-    Route::delete('/users/delete/{id}', 'API\Users\UsersController@getUserDelete');
+//Route::middleware('auth:api')->group( function () {     
+Route::group(['prefix' => config('api.api_version'), 'middleware' => 'auth:api'], function() {
+    Route::get('/users/list', 'API\V1\Users\UsersController@getUserList');
+    Route::post('/users/update/{id}', 'API\V1\Users\UsersController@getUserUpdate');
+    Route::delete('/users/delete/{id}', 'API\V1\Users\UsersController@getUserDelete');
 });
