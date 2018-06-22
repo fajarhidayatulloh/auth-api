@@ -11,6 +11,12 @@ Auth API.
 - Chmod 777 `Storage`
 - Well Done. 
 
+## Checking All Routes
+
+```sh
+php artisan route:list
+```
+
 ## A Live PoC
 
 - Run a PHP built in server from your root project:
